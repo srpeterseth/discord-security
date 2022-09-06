@@ -1,5 +1,5 @@
 import { GuildMember, TextChannel, EmbedBuilder } from 'discord.js';
-import { client, config } from '..';
+import { client } from '..';
 
 /**
  * Bans a member from the guild and logs the ban to the logs channel.
