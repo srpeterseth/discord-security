@@ -10,7 +10,7 @@ async function ban(member: GuildMember, violation: string): Promise<void> {
     if (!member) return;
     // If Verified Bot, Don't Ban
     if (member.user.bot) return;
-    const logChannel = (await client.channels.fetch(config.logChannel)) as TextChannel;
+    const logChannel = (await client.channels.fetch(process.env.LOGCHANNEL)) as TextChannel;
     try {
         await member.ban({ reason: `Auto Ban: ${violation}` });
 
