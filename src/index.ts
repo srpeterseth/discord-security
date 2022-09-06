@@ -7,4 +7,4 @@ export { client, config };
 // Bind Events
 import('./events');
 
-client.login(config.token);
+client.login(process.env.DISCORD_BOT_TOKEN);
