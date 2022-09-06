@@ -1,8 +1,7 @@
 import Discord from 'discord.js';
-import config from './config.json';
 
 const client = new Discord.Client({ intents: ['Guilds', 'GuildMembers', 'GuildBans'] });
-export { client, config };
+export { client };
 
 // Bind Events
 import('./events');
